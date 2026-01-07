@@ -2,11 +2,14 @@
   "name": "wanderlust-ai-travel",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://depramu.github.io/LandingPage-TravelDemo/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react-dom": "^19.2.3",
